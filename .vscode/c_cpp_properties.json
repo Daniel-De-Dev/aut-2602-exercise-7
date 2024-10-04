@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "name": "AVR Linux",
+            "includePath": [
+                "${workspaceFolder}/include",
+                "${env:HOME}/Documents/Microchip.AVR-Dx_DFP.2.6.303/include"
+            ],
+            "defines": [
+                "__AVR_AVR128DB48__"
+            ],
+            "compilerPath": "/usr/bin/avr-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "gcc-x64"
+        },
+        {
+            "name": "AVR Windows",
+            "includePath": [
+                "${workspaceFolder}/include",
+                "${env:USERPROFILE}/Documents/Microchip.AVR-Dx_DFP.2.6.303/include",
+                "${env:USERPROFILE}/Documents/Microchip.AVR-Dx_DFP.2.6.303/include/avr"
+            ],
+             "defines": [
+                "__AVR_AVR128DB48__"
+            ],
+            "compilerPath": "${env:ProgramFiles(x86)}/avr8-gnu-toolchain/bin/avr-gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
