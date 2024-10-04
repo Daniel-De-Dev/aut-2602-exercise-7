@@ -22,7 +22,8 @@
                 "${env:USERPROFILE}/Documents/Microchip.AVR-Dx_DFP.2.6.303/include/avr"
             ],
              "defines": [
-                "__AVR_AVR128DB48__"
+                "__AVR_AVR128DB48__",
+                "F_CPU=4000000UL"
             ],
             "compilerPath": "${env:ProgramFiles(x86)}/avr8-gnu-toolchain/bin/avr-gcc.exe",
             "cStandard": "c11",

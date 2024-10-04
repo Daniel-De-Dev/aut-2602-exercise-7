@@ -7,6 +7,7 @@
 MCU = avr128db48
 PROGRAMMER = pkobn_updi
 PORT = usb
+F_CPU = 4000000UL
 
 # Paths
 ifeq ($(OS),Windows_NT)
@@ -35,7 +36,7 @@ OBJ = $(patsubst $(SRC_DIR)/%.c, $(BUILD_DIR)/%.o, $(SRC))
 TARGET = $(BUILD_DIR)/main.elf
 FLASH_FILE = $(BUILD_DIR)/main.hex
 CC = avr-gcc
-CFLAGS = -mmcu=$(MCU) -B $(DEV_SPECS) -isystem $(INCLUDE_PATH) -I$(INCLUDE_DIR) -Os
+CFLAGS = -mmcu=$(MCU) -B $(DEV_SPECS) -DF_CPU=$(F_CPU) -isystem $(INCLUDE_PATH) -I$(INCLUDE_DIR) -Os
 
 # Compilation rule
 all: $(TARGET)
