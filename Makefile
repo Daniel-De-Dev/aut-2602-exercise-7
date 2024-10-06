@@ -7,7 +7,7 @@
 MCU = avr128db48
 PROGRAMMER = pkobn_updi
 PORT = usb
-F_CPU = 4000000UL
+F_CPU = 16000000UL
 
 # Paths
 ifeq ($(OS),Windows_NT)

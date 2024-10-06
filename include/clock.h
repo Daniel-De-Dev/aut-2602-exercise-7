@@ -14,9 +14,9 @@
  * @brief Defines the clock frequency (F_CPU) in Hz.
  * 
  * This is the system clock frequency used for timing and delay calculations.
- *! Ensure that this matches the clock settings specified in makefile and anywhere else.
+ * Ensure that this matches the clock settings specified in makefile and anywhere else.
  */
-#define F_CPU 4000000UL     /**< System clock frequency is set to 4 MHz */
+#define F_CPU 16000000UL     /**< System clock frequency is set to 16 MHz */
 
 /**
  * @brief Retrieves the peripheral clock frequency.
